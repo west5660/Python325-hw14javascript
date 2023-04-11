@@ -1,0 +1,70 @@
+#game{
+    width: 650px;
+    height: 450px;
+    margin: auto;
+    border-bottom: 3px solid;
+    background-image: url("priroda2.jpg");
+    background-size: 200% 100%;
+    animation: backgroundScroll 2s linear infinite
+}
+@keyframes backgroundScroll {
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: 100% 0;
+    }
+}
+
+#dino{
+    width: 50px;
+    height: 50px;
+    background-image: url("dino.png");
+    background-size: 100%;
+    position: relative;
+    top: 345px;
+}
+@keyframes dino {
+    0%  {top: 345px;}
+    33%{top: 245px;}
+    66%{top: 145px;}
+    100%{top: 45px;}
+}
+#kaktus{
+    width: 50px;
+    height: 50px;
+    background-image: url("kaktus.jpg");
+    background-size: 100%;
+    position: relative;
+    top: 295px;
+    left: 600px;
+    animation: kaktusrun 1.5s alternate infinite linear;
+}
+@keyframes kaktusrun {
+    from {left: 600px}
+    to { left: -50px}
+}
+.jump{
+    animation: dino 1.0s linear;
+}
+
+#meteor{
+    width: 50px;
+    height: 50px;
+    background-image: url("meteor.png");
+    background-size: 100%;
+    position: relative;
+    top: 100px;
+    left: 600px;
+    animation: meteorrun 3.5s alternate infinite linear;
+}
+@keyframes meteorrun {
+    from {left: 600px}
+    to { left: -50px}
+     0%  {top: 100px;}
+     15%  {top: 250px;}
+    30%{top: 50px;}
+    60%{top: 300px;}
+    80%{top: 80px;}
+    100%{top: 100px;}
+}
